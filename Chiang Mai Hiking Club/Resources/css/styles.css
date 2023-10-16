@@ -1,0 +1,113 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image of a mountain landscape */
+body {
+    background-image: url(./artem-sapegin-8c6eS43iq1o-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #007f5f; /* Greenish-blue header background inspired by nature */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main content container */
+section {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white content background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Headings and text styles */
+h1, h2 {
+    color: #333; /* Dark gray headings */
+}
+
+p {
+    color: #333; /* Slightly darker gray text */
+}
+
+/* Links styles */
+a {
+    color: #007f5f; /* Greenish-blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button style */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007f5f; /* Greenish-blue button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005a43; /* Darker greenish-blue on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: rgba(0, 127, 95, 0.8); /* Slightly transparent greenish-blue footer background */
+    color: white; /* White text color */
+    padding: 10px 0;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Customize other elements and styles as needed */
+
+/* Image container styles */
+.image-container {
+    display: flex; /* Use Flexbox to align images side by side */
+    justify-content: space-between; /* Space evenly between images */
+    margin-top: 20px; /* Add margin to separate images from content */
+}
+
+/* Individual image styles */
+.image-container img {
+    max-width: 45%; /* Set the maximum width of each image to 45% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add a slight border radius for aesthetics */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-right: 5px; /* Add some spacing between images */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center-align images */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Use full width for individual images on smaller screens */
+        margin-bottom: 10px; /* Add spacing between stacked images */
+    }
+}
+
