@@ -1,0 +1,251 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #FDF5E6; /* Papyrus color background */
+    color: #343434; /* Jet Black */
+}
+
+/* Header Styles */
+.header {
+    background-color: #FDF5E6; /* Header background color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #343434; /* Black font color for navigation links */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Dark mode toggle button styles */
+.dark-mode-toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#darkModeToggle {
+    padding: 10px;
+    font-family: Georgia, serif;
+    background-color: #343434;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for the raised effect */
+    transition: opacity 0.3s ease, transform 0.3s, box-shadow 0.3s; /* Add transitions for smooth effects */
+}
+
+/* Hover effect */
+#darkModeToggle:hover {
+    transform: translateY(-3px); /* Move the button slightly upward on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333; /* Dark mode background */
+    color: #fff; /* Dark mode text color */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .header,
+body.dark-mode .hero h1,
+body.dark-mode .hero h2,
+body.dark-mode nav a,
+body.dark-mode section {
+    background-color: #333; /* Dark mode background */
+    color: #fff; /* Dark mode font color for header, h1, h2, nav links, and section text */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode main h1 {
+    background-color: #333; /* Dark mode background */
+    color: #fff; /* Dark mode font color for h1 elements within the main section */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode main h2,
+body.dark-mode main h3 {
+    color: #fff; /* Dark mode font color for h2 and h3 elements within the main section */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#headshot {
+    max-width: 25%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10%; /* Optional: Add a border-radius for a circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle box shadow */
+    margin-bottom: 20px; /* Optional: Add margin for spacing */
+    transition: transform 0.3s ease;
+}
+
+#headshot:hover {
+    transform: scale(1.1); /* Zoom in by 110% on hover */
+}
+
+#about {
+    max-width: 50%; /* Set the maximum width of the "About Me" section to 50% of its container */
+    float: left; /* Float the "About Me" section to the left */
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    color: #343434; /* Black font color for headings */
+}
+
+/* Project Grid Styles */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+/* Skills List Styles */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.skill img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Optional: Add more styling as needed */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #343434;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for the raised effect */
+    transition: opacity 0.3s ease, transform 0.3s, box-shadow 0.3s; /* Add transitions for smooth effects */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+    transform: translateY(-3px); /* Move the button slightly upward on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+
+/* Show the button when the user scrolls 300px down */
+body.dark-mode #scrollToTopBtn {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode #scrollToTopBtn:hover {
+    background-color: #333;
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.2em;
+    }
+
+    .hero h2 {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    /* Adjust the dark mode button size for mobile phones */
+    #darkModeToggle {
+        padding: 8px; /* Adjust the padding or font size as needed */padding: 5px; /* Adjust padding as needed */
+        width: 75%; /* 75% smaller width */
+        height: auto; /* Maintain aspect ratio */
+        font-size: 0.8em; /* Adjust font size if necessary */
+
+    }
+
+    /* ... (Other adjustments for mobile phones) ... */
+}
+
+
+
